@@ -32,13 +32,22 @@ class _ExampleFiveState extends State<ExampleFive> {
       body: Column(
         children: [
          Expanded(
-          child: FutureBuilder(
+          child: FutureBuilder<ProductModel>(
             builder: (context, snapshot) {
-              return ListView.builder(
+              if (snapshot.hasData){
+                return ListView.builder(
+                itemCount: snapshot.data!.data!.length,
                 itemBuilder: (context, index) {
-                  
+                  return Column(
+                    children: [
+                      Text(index.toString())
+                    ],
+                  );
                 },
                 );
+              } else {
+                return Text('Loading...');
+              }
             },
             ),
           )
