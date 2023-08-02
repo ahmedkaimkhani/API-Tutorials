@@ -19,7 +19,7 @@ class _ExampleFiveState extends State<ExampleFive> {
     if (response.statusCode == 200){
       return ProductModel.fromJson(data);
     } else {
-
+      return ProductModel.fromJson(data);
     }
   }
   @override
