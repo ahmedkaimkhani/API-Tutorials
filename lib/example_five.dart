@@ -33,6 +33,7 @@ class _ExampleFiveState extends State<ExampleFive> {
         children: [
          Expanded(
           child: FutureBuilder<ProductModel>(
+            future: getProductsApi(),
             builder: (context, snapshot) {
               if (snapshot.hasData){
                 return ListView.builder(
