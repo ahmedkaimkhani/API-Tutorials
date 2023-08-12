@@ -16,6 +16,13 @@ class _SignUpState extends State<SignUp> {
         title: const Text('Sign Up R Api'),
         centerTitle: true,
       ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+
+        ],
+      ),
     );
   }
 }
