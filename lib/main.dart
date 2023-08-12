@@ -1,3 +1,4 @@
+import 'package:api_tutorials_flutter/Rest%20API/Signup.dart';
 import 'package:api_tutorials_flutter/example_five.dart';
 import 'package:api_tutorials_flutter/example_four.dart';
 import 'package:api_tutorials_flutter/example_three.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: const ExampleFive(),
+      home: const SignUp(),
     );
   }
 }
